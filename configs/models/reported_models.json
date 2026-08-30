@@ -1,0 +1,59 @@
+{
+  "schema_version": 1,
+  "idea_id": "jointcore",
+  "purpose": "Pinned inventory for the four model families displayed in the submitted JointCore manuscript.",
+  "runtime": {
+    "serving_engine": "transformers",
+    "torch_dtype": "bfloat16",
+    "torch_expected": "2.6.0+cu124",
+    "transformers_expected": "5.15.0",
+    "decoding": "greedy"
+  },
+  "models": {
+    "qwen25_14b": {
+      "model_id": "Qwen/Qwen2.5-14B-Instruct",
+      "revision": "cf98f3b3bbb457ad9e2bb7baf9a0125b6b88caa8",
+      "path_env": "JOINTCORE_QWEN25_14B_PATH",
+      "tokenizer_revision": "cf98f3b3bbb457ad9e2bb7baf9a0125b6b88caa8",
+      "role": "paper_expansion_actor",
+      "quantization": "none_bfloat16",
+      "model_loader": "auto_causal_lm",
+      "chat_template": "snapshot_default",
+      "max_new_tokens": 64
+    },
+    "gemma4_12b_it": {
+      "model_id": "google/gemma-4-12B-it",
+      "revision": "707f0a3b8a3c7ad586ed01e27eafbad8a27dd0f7",
+      "path_env": "JOINTCORE_GEMMA4_12B_PATH",
+      "tokenizer_revision": "707f0a3b8a3c7ad586ed01e27eafbad8a27dd0f7",
+      "role": "paper_expansion_actor",
+      "quantization": "none_bfloat16",
+      "model_loader": "auto_causal_lm",
+      "chat_template": "snapshot_default",
+      "max_new_tokens": 64
+    },
+    "mistral31_24b_4bit": {
+      "model_id": "unsloth/Mistral-Small-3.1-24B-Instruct-2503-bnb-4bit",
+      "revision": "b28a0cfd2f7fe2293e41ad6ab930b184375daa50",
+      "path_env": "JOINTCORE_MISTRAL31_24B_PATH",
+      "tokenizer_revision": "b28a0cfd2f7fe2293e41ad6ab930b184375daa50",
+      "role": "paper_expansion_actor",
+      "quantization": "bnb_4bit_nf4_double_quant",
+      "model_loader": "auto_image_text_to_text",
+      "fix_mistral_regex": true,
+      "chat_template": "snapshot_default",
+      "max_new_tokens": 64
+    },
+    "llama33_70b_4bit": {
+      "model_id": "meta-llama/Llama-3.3-70B-Instruct",
+      "revision": "6f6073b423013f6a7d4d9f39144961bfbfbc386b",
+      "path_env": "JOINTCORE_LLAMA33_70B_PATH",
+      "tokenizer_revision": "6f6073b423013f6a7d4d9f39144961bfbfbc386b",
+      "role": "paper_expansion_actor",
+      "quantization": "bnb_4bit_nf4_double_quant",
+      "model_loader": "auto_causal_lm",
+      "chat_template": "snapshot_default",
+      "max_new_tokens": 64
+    }
+  }
+}

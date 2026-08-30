@@ -61,6 +61,30 @@ class PaperExpansionTests(unittest.TestCase):
         self.assertEqual(shards[0] | shards[1], set(range(432)))
         self.assertTrue(config["freeze"]["posthoc_model_extension"])
 
+    def test_reported_cohort_reproduction_package(self) -> None:
+        config = load("configs/experiments/reported_cohort.json")
+        inventory = load("configs/models/reported_models.json")
+        validate_paper_config(config)
+        validate_model_config(inventory, {"paper_expansion_actor"})
+        tasks = list(iter_model_tasks(config))
+        expected_models = [
+            "qwen25_14b",
+            "gemma4_12b_it",
+            "mistral31_24b_4bit",
+            "llama33_70b_4bit",
+        ]
+        self.assertEqual(len(tasks), 432)
+        self.assertEqual(len({task.paper_task_id for task in tasks}), 432)
+        self.assertEqual(config["actors"], expected_models)
+        self.assertEqual(set(inventory["models"]), set(expected_models))
+        self.assertEqual(sha256_file(ROOT / config["source_spec"]), config["source_sha256"])
+        self.assertTrue(config["freeze"]["reproduction_packaging"])
+        self.assertTrue(config["freeze"]["does_not_relabel_registration"])
+        self.assertEqual(
+            inventory["models"]["qwen25_14b"]["revision"],
+            "cf98f3b3bbb457ad9e2bb7baf9a0125b6b88caa8",
+        )
+
     def test_exact_record_has_complete_method_matrix(self) -> None:
         config = load("configs/experiments/exact_benchmark.json")
         task = next(

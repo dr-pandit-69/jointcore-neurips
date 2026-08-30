@@ -1,8 +1,9 @@
 # JointCore
 
 This repository contains the code for the JointCore exact, model, robustness,
-and transfer experiments. It does
-not contain model weights, paper sources, or experimental outputs.
+and transfer experiments. It also contains frozen manuscript aggregates under
+`results/`. It does not contain model weights, paper sources, or raw model
+outputs.
 
 ## Setup and verification
 
@@ -32,6 +33,7 @@ their absolute paths as required by `configs/models/*.json`:
 export JOINTCORE_GEMMA4_12B_PATH=/absolute/path/to/gemma-4-12b
 export JOINTCORE_MISTRAL31_24B_PATH=/absolute/path/to/mistral-24b-4bit
 export JOINTCORE_LLAMA33_70B_PATH=/absolute/path/to/llama-3.3-70b
+export JOINTCORE_QWEN25_14B_PATH=/absolute/path/to/qwen2.5-14b
 ```
 
 Run one registered model on an allocation exposing exactly one GPU:
@@ -44,6 +46,42 @@ CUDA_VISIBLE_DEVICES=0 uv run python scripts/run_model_worker.py \
 The `lane` value is a logical provenance label. The frozen assignment is
 recorded in `configs/experiments/confirmation.json`. Workers are resumable and
 can be split deterministically with `--num-shards N --shard-index I`.
+
+To reproduce the four-model cohort displayed in the manuscript, use the
+post-study packaging config without changing the historical freeze files:
+
+```bash
+CUDA_VISIBLE_DEVICES=0 uv run python scripts/run_model_worker.py \
+  --config configs/experiments/reported_cohort.json \
+  --models configs/models/reported_models.json \
+  --model qwen25_14b --lane a100-2 \
+  --output-root outputs/reported_cohort_reproduction_v1
+```
+
+Run the same command for `gemma4_12b_it` and `mistral31_24b_4bit`. For
+`llama33_70b_4bit`, use two deterministic shards with lane labels `a100-1` and
+`a100-2`, then aggregate all four models:
+
+```bash
+CUDA_VISIBLE_DEVICES=0 uv run python scripts/run_model_worker.py \
+  --config configs/experiments/reported_cohort.json \
+  --models configs/models/reported_models.json \
+  --model llama33_70b_4bit --lane a100-1 \
+  --num-shards 2 --shard-index 0 \
+  --output-root outputs/reported_cohort_reproduction_v1
+
+CUDA_VISIBLE_DEVICES=0 uv run python scripts/run_model_worker.py \
+  --config configs/experiments/reported_cohort.json \
+  --models configs/models/reported_models.json \
+  --model llama33_70b_4bit --lane a100-2 \
+  --num-shards 2 --shard-index 1 \
+  --output-root outputs/reported_cohort_reproduction_v1
+
+uv run python scripts/aggregate_models.py \
+  --config configs/experiments/reported_cohort.json \
+  --models configs/models/reported_models.json \
+  --output-root outputs/reported_cohort_reproduction_v1
+```
 
 After each model completes:
 

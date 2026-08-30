@@ -78,6 +78,7 @@ def validate_paper_config(config: dict[str, Any], *, exact: bool = False) -> Non
         "paper_expansion_development_v4", "paper_expansion_confirmation_v2",
         "paper_expansion_confirmation_v3", "paper_expansion_confirmation_v4",
         "paper_expansion_model_extension_v1",
+        "paper_expansion_reported_cohort_reproduction_v1",
     }
     if exact:
         if config.get("stage") != expected_stage:

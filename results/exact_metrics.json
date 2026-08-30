@@ -1,0 +1,1166 @@
+{
+  "config_hash": "ac7cade5e44a968f7c25ae710b556c8b84f0cb5936a1f92d28ca5f4438578e35",
+  "generated_utc": "2026-08-30T10:56:34Z",
+  "idea_id": "jointcore",
+  "method_records": 55296,
+  "metrics": {
+    "by_candidate_count": {
+      "16": {
+        "conditional_singleton_cost": {
+          "active_token_savings": 0.8697308759769532,
+          "budget_exhaustion_rate": 0.0,
+          "cost_gap": 0.0,
+          "critical_recall": 0.8643904320987654,
+          "exact_sufficiency": 1.0,
+          "intervention_count": 16.0,
+          "records": 1728,
+          "valid_minimum_set": 1.0
+        },
+        "exact_oracle": {
+          "active_token_savings": 0.8697308759769532,
+          "budget_exhaustion_rate": 0.0,
+          "cost_gap": 0.0,
+          "critical_recall": 0.8643904320987654,
+          "exact_sufficiency": 1.0,
+          "intervention_count": 0.0,
+          "records": 1728,
+          "valid_minimum_set": 1.0
+        },
+        "full_memory": {
+          "active_token_savings": 0.0,
+          "budget_exhaustion_rate": 0.0,
+          "cost_gap": 10.570297660977705,
+          "critical_recall": 1.0,
+          "exact_sufficiency": 1.0,
+          "intervention_count": 0.0,
+          "records": 1728,
+          "valid_minimum_set": 0.0
+        },
+        "independent_leave_one_out": {
+          "active_token_savings": 0.8937496912099228,
+          "budget_exhaustion_rate": 0.0,
+          "cost_gap": 0.0,
+          "critical_recall": 0.6666666666666666,
+          "exact_sufficiency": 0.6666666666666666,
+          "intervention_count": 16.0,
+          "records": 1728,
+          "valid_minimum_set": 0.6666666666666666
+        },
+        "jointcore_cost_ordered": {
+          "active_token_savings": 0.8697308759769532,
+          "budget_exhaustion_rate": 0.0,
+          "cost_gap": 0.0,
+          "critical_recall": 0.8643904320987654,
+          "exact_sufficiency": 1.0,
+          "intervention_count": 10.118055555555555,
+          "records": 1728,
+          "valid_minimum_set": 1.0
+        },
+        "jointcore_legacy": {
+          "active_token_savings": 0.8677711180788807,
+          "budget_exhaustion_rate": 0.0,
+          "cost_gap": 0.03188188403032153,
+          "critical_recall": 0.8178047839506173,
+          "exact_sufficiency": 1.0,
+          "intervention_count": 9.95949074074074,
+          "records": 1728,
+          "valid_minimum_set": 0.9334490740740741
+        },
+        "random_b": {
+          "active_token_savings": 0.7526351757262004,
+          "budget_exhaustion_rate": 0.0,
+          "cost_gap": 3.5344506382872725,
+          "critical_recall": 0.25636574074074076,
+          "exact_sufficiency": 0.1753472222222222,
+          "intervention_count": 0.0,
+          "records": 1728,
+          "valid_minimum_set": 0.0005787037037037037
+        },
+        "semantic_top_b": {
+          "active_token_savings": 0.7617560603938458,
+          "budget_exhaustion_rate": 0.0,
+          "cost_gap": 1.746177266541129,
+          "critical_recall": 0.9861111111111112,
+          "exact_sufficiency": 0.9444444444444444,
+          "intervention_count": 0.0,
+          "records": 1728,
+          "valid_minimum_set": 0.2222222222222222
+        }
+      },
+      "32": {
+        "conditional_singleton_cost": {
+          "active_token_savings": 0.9358926625432362,
+          "budget_exhaustion_rate": 0.0,
+          "cost_gap": 0.0,
+          "critical_recall": 0.8686342592592593,
+          "exact_sufficiency": 1.0,
+          "intervention_count": 32.0,
+          "records": 1728,
+          "valid_minimum_set": 1.0
+        },
+        "exact_oracle": {
+          "active_token_savings": 0.9358926625432362,
+          "budget_exhaustion_rate": 0.0,
+          "cost_gap": 0.0,
+          "critical_recall": 0.8686342592592593,
+          "exact_sufficiency": 1.0,
+          "intervention_count": 0.0,
+          "records": 1728,
+          "valid_minimum_set": 1.0
+        },
+        "full_memory": {
+          "active_token_savings": 0.0,
+          "budget_exhaustion_rate": 0.0,
+          "cost_gap": 22.337933842203462,
+          "critical_recall": 1.0,
+          "exact_sufficiency": 1.0,
+          "intervention_count": 0.0,
+          "records": 1728,
+          "valid_minimum_set": 0.0
+        },
+        "independent_leave_one_out": {
+          "active_token_savings": 0.9476216099797311,
+          "budget_exhaustion_rate": 0.0,
+          "cost_gap": 0.0,
+          "critical_recall": 0.6666666666666666,
+          "exact_sufficiency": 0.6666666666666666,
+          "intervention_count": 32.0,
+          "records": 1728,
+          "valid_minimum_set": 0.6666666666666666
+        },
+        "jointcore_cost_ordered": {
+          "active_token_savings": 0.9358926625432362,
+          "budget_exhaustion_rate": 0.0,
+          "cost_gap": 0.0,
+          "critical_recall": 0.8686342592592593,
+          "exact_sufficiency": 1.0,
+          "intervention_count": 12.130787037037036,
+          "records": 1728,
+          "valid_minimum_set": 1.0
+        },
+        "jointcore_legacy": {
+          "active_token_savings": 0.9348528353619157,
+          "budget_exhaustion_rate": 0.0,
+          "cost_gap": 0.0333778498058012,
+          "critical_recall": 0.820408950617284,
+          "exact_sufficiency": 1.0,
+          "intervention_count": 11.95486111111111,
+          "records": 1728,
+          "valid_minimum_set": 0.9328703703703703
+        },
+        "random_b": {
+          "active_token_savings": 0.8751576920610189,
+          "budget_exhaustion_rate": 0.0,
+          "cost_gap": 3.7353317669984336,
+          "critical_recall": 0.12413194444444445,
+          "exact_sufficiency": 0.078125,
+          "intervention_count": 0.0,
+          "records": 1728,
+          "valid_minimum_set": 0.0
+        },
+        "semantic_top_b": {
+          "active_token_savings": 0.8810468606431188,
+          "budget_exhaustion_rate": 0.0,
+          "cost_gap": 1.7852912663277067,
+          "critical_recall": 0.9861111111111112,
+          "exact_sufficiency": 0.9444444444444444,
+          "intervention_count": 0.0,
+          "records": 1728,
+          "valid_minimum_set": 0.2222222222222222
+        }
+      },
+      "64": {
+        "conditional_singleton_cost": {
+          "active_token_savings": 0.9683482039456724,
+          "budget_exhaustion_rate": 0.0,
+          "cost_gap": 0.0,
+          "critical_recall": 0.8657407407407407,
+          "exact_sufficiency": 1.0,
+          "intervention_count": 64.0,
+          "records": 1728,
+          "valid_minimum_set": 1.0
+        },
+        "exact_oracle": {
+          "active_token_savings": 0.9683482039456724,
+          "budget_exhaustion_rate": 0.0,
+          "cost_gap": 0.0,
+          "critical_recall": 0.8657407407407407,
+          "exact_sufficiency": 1.0,
+          "intervention_count": 0.0,
+          "records": 1728,
+          "valid_minimum_set": 1.0
+        },
+        "full_memory": {
+          "active_token_savings": 0.0,
+          "budget_exhaustion_rate": 0.0,
+          "cost_gap": 46.04076319045375,
+          "critical_recall": 1.0,
+          "exact_sufficiency": 1.0,
+          "intervention_count": 0.0,
+          "records": 1728,
+          "valid_minimum_set": 0.0
+        },
+        "independent_leave_one_out": {
+          "active_token_savings": 0.9742863451235417,
+          "budget_exhaustion_rate": 0.0,
+          "cost_gap": 0.0,
+          "critical_recall": 0.6666666666666666,
+          "exact_sufficiency": 0.6666666666666666,
+          "intervention_count": 64.0,
+          "records": 1728,
+          "valid_minimum_set": 0.6666666666666666
+        },
+        "jointcore_cost_ordered": {
+          "active_token_savings": 0.9683482039456724,
+          "budget_exhaustion_rate": 0.0,
+          "cost_gap": 0.0,
+          "critical_recall": 0.8657407407407407,
+          "exact_sufficiency": 1.0,
+          "intervention_count": 14.144675925925926,
+          "records": 1728,
+          "valid_minimum_set": 1.0
+        },
+        "jointcore_legacy": {
+          "active_token_savings": 0.9677810674265234,
+          "budget_exhaustion_rate": 0.0,
+          "cost_gap": 0.03564759571704016,
+          "critical_recall": 0.8147183641975309,
+          "exact_sufficiency": 1.0,
+          "intervention_count": 13.944444444444445,
+          "records": 1728,
+          "valid_minimum_set": 0.9270833333333334
+        },
+        "random_b": {
+          "active_token_savings": 0.9363036470533435,
+          "budget_exhaustion_rate": 0.0,
+          "cost_gap": 4.049733451072737,
+          "critical_recall": 0.05705054012345679,
+          "exact_sufficiency": 0.032407407407407406,
+          "intervention_count": 0.0,
+          "records": 1728,
+          "valid_minimum_set": 0.0
+        },
+        "semantic_top_b": {
+          "active_token_savings": 0.940830132793313,
+          "budget_exhaustion_rate": 0.0,
+          "cost_gap": 1.794775745258282,
+          "critical_recall": 0.9861111111111112,
+          "exact_sufficiency": 0.9444444444444444,
+          "intervention_count": 0.0,
+          "records": 1728,
+          "valid_minimum_set": 0.2222222222222222
+        }
+      },
+      "8": {
+        "conditional_singleton_cost": {
+          "active_token_savings": 0.7364018223367019,
+          "budget_exhaustion_rate": 0.0,
+          "cost_gap": 0.0,
+          "critical_recall": 0.8658371913580247,
+          "exact_sufficiency": 1.0,
+          "intervention_count": 8.0,
+          "records": 1728,
+          "valid_minimum_set": 1.0
+        },
+        "exact_oracle": {
+          "active_token_savings": 0.7364018223367019,
+          "budget_exhaustion_rate": 0.0,
+          "cost_gap": 0.0,
+          "critical_recall": 0.8658371913580247,
+          "exact_sufficiency": 1.0,
+          "intervention_count": 0.0,
+          "records": 1728,
+          "valid_minimum_set": 1.0
+        },
+        "full_memory": {
+          "active_token_savings": 0.0,
+          "budget_exhaustion_rate": 0.0,
+          "cost_gap": 4.69021430305261,
+          "critical_recall": 1.0,
+          "exact_sufficiency": 1.0,
+          "intervention_count": 0.0,
+          "records": 1728,
+          "valid_minimum_set": 0.0
+        },
+        "independent_leave_one_out": {
+          "active_token_savings": 0.7845104373069662,
+          "budget_exhaustion_rate": 0.0,
+          "cost_gap": 0.0,
+          "critical_recall": 0.6666666666666666,
+          "exact_sufficiency": 0.6666666666666666,
+          "intervention_count": 8.0,
+          "records": 1728,
+          "valid_minimum_set": 0.6666666666666666
+        },
+        "jointcore_cost_ordered": {
+          "active_token_savings": 0.7364018223367019,
+          "budget_exhaustion_rate": 0.0,
+          "cost_gap": 0.0,
+          "critical_recall": 0.8658371913580247,
+          "exact_sufficiency": 1.0,
+          "intervention_count": 8.113425925925926,
+          "records": 1728,
+          "valid_minimum_set": 1.0
+        },
+        "jointcore_legacy": {
+          "active_token_savings": 0.7326152901047278,
+          "budget_exhaustion_rate": 0.0,
+          "cost_gap": 0.02985047199456922,
+          "critical_recall": 0.8250385802469137,
+          "exact_sufficiency": 1.0,
+          "intervention_count": 7.967592592592593,
+          "records": 1728,
+          "valid_minimum_set": 0.9380787037037037
+        },
+        "random_b": {
+          "active_token_savings": 0.5000140640944578,
+          "budget_exhaustion_rate": 0.0,
+          "cost_gap": 3.0472440179489104,
+          "critical_recall": 0.494261188271605,
+          "exact_sufficiency": 0.3611111111111111,
+          "intervention_count": 0.0,
+          "records": 1728,
+          "valid_minimum_set": 0.004050925925925926
+        },
+        "semantic_top_b": {
+          "active_token_savings": 0.5154811280552664,
+          "budget_exhaustion_rate": 0.0,
+          "cost_gap": 1.7752160546805336,
+          "critical_recall": 0.9861111111111112,
+          "exact_sufficiency": 0.9444444444444444,
+          "intervention_count": 0.0,
+          "records": 1728,
+          "valid_minimum_set": 0.2222222222222222
+        }
+      }
+    },
+    "by_family": {
+      "delayed_fsm": {
+        "conditional_singleton_cost": {
+          "active_token_savings": 0.8298511153512952,
+          "budget_exhaustion_rate": 0.0,
+          "cost_gap": 0.0,
+          "critical_recall": 1.0,
+          "exact_sufficiency": 1.0,
+          "intervention_count": 30.0,
+          "records": 768,
+          "valid_minimum_set": 1.0
+        },
+        "exact_oracle": {
+          "active_token_savings": 0.8298511153512952,
+          "budget_exhaustion_rate": 0.0,
+          "cost_gap": 0.0,
+          "critical_recall": 1.0,
+          "exact_sufficiency": 1.0,
+          "intervention_count": 0.0,
+          "records": 768,
+          "valid_minimum_set": 1.0
+        },
+        "full_memory": {
+          "active_token_savings": 0.0,
+          "budget_exhaustion_rate": 0.0,
+          "cost_gap": 11.709403004880032,
+          "critical_recall": 1.0,
+          "exact_sufficiency": 1.0,
+          "intervention_count": 0.0,
+          "records": 768,
+          "valid_minimum_set": 0.0
+        },
+        "independent_leave_one_out": {
+          "active_token_savings": 0.8298511153512952,
+          "budget_exhaustion_rate": 0.0,
+          "cost_gap": 0.0,
+          "critical_recall": 1.0,
+          "exact_sufficiency": 1.0,
+          "intervention_count": 30.0,
+          "records": 768,
+          "valid_minimum_set": 1.0
+        },
+        "jointcore_cost_ordered": {
+          "active_token_savings": 0.8298511153512952,
+          "budget_exhaustion_rate": 0.0,
+          "cost_gap": 0.0,
+          "critical_recall": 1.0,
+          "exact_sufficiency": 1.0,
+          "intervention_count": 11.591145833333334,
+          "records": 768,
+          "valid_minimum_set": 1.0
+        },
+        "jointcore_legacy": {
+          "active_token_savings": 0.8298511153512952,
+          "budget_exhaustion_rate": 0.0,
+          "cost_gap": 0.0,
+          "critical_recall": 1.0,
+          "exact_sufficiency": 1.0,
+          "intervention_count": 11.0,
+          "records": 768,
+          "valid_minimum_set": 1.0
+        },
+        "random_b": {
+          "active_token_savings": 0.7667759603118656,
+          "budget_exhaustion_rate": 0.0,
+          "cost_gap": 1.2477668442668444,
+          "critical_recall": 0.2373046875,
+          "exact_sufficiency": 0.032552083333333336,
+          "intervention_count": 0.0,
+          "records": 768,
+          "valid_minimum_set": 0.0013020833333333333
+        },
+        "semantic_top_b": {
+          "active_token_savings": 0.7719930026557962,
+          "budget_exhaustion_rate": 0.0,
+          "cost_gap": 0.5787146855391341,
+          "critical_recall": 1.0,
+          "exact_sufficiency": 1.0,
+          "intervention_count": 0.0,
+          "records": 768,
+          "valid_minimum_set": 0.5
+        }
+      },
+      "harmful_stale": {
+        "conditional_singleton_cost": {
+          "active_token_savings": 0.8314403641938357,
+          "budget_exhaustion_rate": 0.0,
+          "cost_gap": 0.0,
+          "critical_recall": 1.0,
+          "exact_sufficiency": 1.0,
+          "intervention_count": 30.0,
+          "records": 768,
+          "valid_minimum_set": 1.0
+        },
+        "exact_oracle": {
+          "active_token_savings": 0.8314403641938357,
+          "budget_exhaustion_rate": 0.0,
+          "cost_gap": 0.0,
+          "critical_recall": 1.0,
+          "exact_sufficiency": 1.0,
+          "intervention_count": 0.0,
+          "records": 768,
+          "valid_minimum_set": 1.0
+        },
+        "full_memory": {
+          "active_token_savings": 0.0,
+          "budget_exhaustion_rate": 0.0,
+          "cost_gap": 11.702654132653072,
+          "critical_recall": 1.0,
+          "exact_sufficiency": 1.0,
+          "intervention_count": 0.0,
+          "records": 768,
+          "valid_minimum_set": 0.0
+        },
+        "independent_leave_one_out": {
+          "active_token_savings": 0.8314403641938357,
+          "budget_exhaustion_rate": 0.0,
+          "cost_gap": 0.0,
+          "critical_recall": 1.0,
+          "exact_sufficiency": 1.0,
+          "intervention_count": 30.0,
+          "records": 768,
+          "valid_minimum_set": 1.0
+        },
+        "jointcore_cost_ordered": {
+          "active_token_savings": 0.8314403641938357,
+          "budget_exhaustion_rate": 0.0,
+          "cost_gap": 0.0,
+          "critical_recall": 1.0,
+          "exact_sufficiency": 1.0,
+          "intervention_count": 11.6015625,
+          "records": 768,
+          "valid_minimum_set": 1.0
+        },
+        "jointcore_legacy": {
+          "active_token_savings": 0.8314403641938357,
+          "budget_exhaustion_rate": 0.0,
+          "cost_gap": 0.0,
+          "critical_recall": 1.0,
+          "exact_sufficiency": 1.0,
+          "intervention_count": 11.0,
+          "records": 768,
+          "valid_minimum_set": 1.0
+        },
+        "random_b": {
+          "active_token_savings": 0.7665078987218483,
+          "budget_exhaustion_rate": 0.0,
+          "cost_gap": 1.160005169727392,
+          "critical_recall": 0.24739583333333334,
+          "exact_sufficiency": 0.03515625,
+          "intervention_count": 0.0,
+          "records": 768,
+          "valid_minimum_set": 0.0
+        },
+        "semantic_top_b": {
+          "active_token_savings": 0.773394729768405,
+          "budget_exhaustion_rate": 0.0,
+          "cost_gap": 0.5570837409331205,
+          "critical_recall": 1.0,
+          "exact_sufficiency": 1.0,
+          "intervention_count": 0.0,
+          "records": 768,
+          "valid_minimum_set": 0.5
+        }
+      },
+      "multiple_minimal_sets": {
+        "conditional_singleton_cost": {
+          "active_token_savings": 0.9177088274717712,
+          "budget_exhaustion_rate": 0.0,
+          "cost_gap": 0.0,
+          "critical_recall": 0.5,
+          "exact_sufficiency": 1.0,
+          "intervention_count": 30.0,
+          "records": 768,
+          "valid_minimum_set": 1.0
+        },
+        "exact_oracle": {
+          "active_token_savings": 0.9177088274717712,
+          "budget_exhaustion_rate": 0.0,
+          "cost_gap": 0.0,
+          "critical_recall": 0.5,
+          "exact_sufficiency": 1.0,
+          "intervention_count": 0.0,
+          "records": 768,
+          "valid_minimum_set": 1.0
+        },
+        "full_memory": {
+          "active_token_savings": 0.0,
+          "budget_exhaustion_rate": 0.0,
+          "cost_gap": 26.30059368799603,
+          "critical_recall": 1.0,
+          "exact_sufficiency": 1.0,
+          "intervention_count": 0.0,
+          "records": 768,
+          "valid_minimum_set": 0.0
+        },
+        "independent_leave_one_out": {
+          "active_token_savings": 1.0,
+          "budget_exhaustion_rate": 0.0,
+          "cost_gap": null,
+          "critical_recall": 0.0,
+          "exact_sufficiency": 0.0,
+          "intervention_count": 30.0,
+          "records": 768,
+          "valid_minimum_set": 0.0
+        },
+        "jointcore_cost_ordered": {
+          "active_token_savings": 0.9177088274717712,
+          "budget_exhaustion_rate": 0.0,
+          "cost_gap": 0.0,
+          "critical_recall": 0.5,
+          "exact_sufficiency": 1.0,
+          "intervention_count": 10.0,
+          "records": 768,
+          "valid_minimum_set": 1.0
+        },
+        "jointcore_legacy": {
+          "active_token_savings": 0.9177088274717712,
+          "budget_exhaustion_rate": 0.0,
+          "cost_gap": 0.0,
+          "critical_recall": 0.5,
+          "exact_sufficiency": 1.0,
+          "intervention_count": 10.609375,
+          "records": 768,
+          "valid_minimum_set": 1.0
+        },
+        "random_b": {
+          "active_token_savings": 0.7628577363118194,
+          "budget_exhaustion_rate": 0.0,
+          "cost_gap": 3.235732405595419,
+          "critical_recall": 0.24381510416666666,
+          "exact_sufficiency": 0.28515625,
+          "intervention_count": 0.0,
+          "records": 768,
+          "valid_minimum_set": 0.0
+        },
+        "semantic_top_b": {
+          "active_token_savings": 0.7758618100131014,
+          "budget_exhaustion_rate": 0.0,
+          "cost_gap": 2.2576171874999997,
+          "critical_recall": 1.0,
+          "exact_sufficiency": 1.0,
+          "intervention_count": 0.0,
+          "records": 768,
+          "valid_minimum_set": 0.0
+        }
+      },
+      "proxy_confounded": {
+        "conditional_singleton_cost": {
+          "active_token_savings": 0.8284345537744949,
+          "budget_exhaustion_rate": 0.0,
+          "cost_gap": 0.0,
+          "critical_recall": 1.0,
+          "exact_sufficiency": 1.0,
+          "intervention_count": 30.0,
+          "records": 768,
+          "valid_minimum_set": 1.0
+        },
+        "exact_oracle": {
+          "active_token_savings": 0.8284345537744949,
+          "budget_exhaustion_rate": 0.0,
+          "cost_gap": 0.0,
+          "critical_recall": 1.0,
+          "exact_sufficiency": 1.0,
+          "intervention_count": 0.0,
+          "records": 768,
+          "valid_minimum_set": 1.0
+        },
+        "full_memory": {
+          "active_token_savings": 0.0,
+          "budget_exhaustion_rate": 0.0,
+          "cost_gap": 11.421920631678313,
+          "critical_recall": 1.0,
+          "exact_sufficiency": 1.0,
+          "intervention_count": 0.0,
+          "records": 768,
+          "valid_minimum_set": 0.0
+        },
+        "independent_leave_one_out": {
+          "active_token_savings": 0.8284345537744949,
+          "budget_exhaustion_rate": 0.0,
+          "cost_gap": 0.0,
+          "critical_recall": 1.0,
+          "exact_sufficiency": 1.0,
+          "intervention_count": 30.0,
+          "records": 768,
+          "valid_minimum_set": 1.0
+        },
+        "jointcore_cost_ordered": {
+          "active_token_savings": 0.8284345537744949,
+          "budget_exhaustion_rate": 0.0,
+          "cost_gap": 0.0,
+          "critical_recall": 1.0,
+          "exact_sufficiency": 1.0,
+          "intervention_count": 13.723958333333334,
+          "records": 768,
+          "valid_minimum_set": 1.0
+        },
+        "jointcore_legacy": {
+          "active_token_savings": 0.8284345537744949,
+          "budget_exhaustion_rate": 0.0,
+          "cost_gap": 0.0,
+          "critical_recall": 1.0,
+          "exact_sufficiency": 1.0,
+          "intervention_count": 14.0,
+          "records": 768,
+          "valid_minimum_set": 1.0
+        },
+        "random_b": {
+          "active_token_savings": 0.7685079444851305,
+          "budget_exhaustion_rate": 0.0,
+          "cost_gap": 1.0114023537736774,
+          "critical_recall": 0.22688802083333334,
+          "exact_sufficiency": 0.041666666666666664,
+          "intervention_count": 0.0,
+          "records": 768,
+          "valid_minimum_set": 0.00390625
+        },
+        "semantic_top_b": {
+          "active_token_savings": 0.7796703920648579,
+          "budget_exhaustion_rate": 0.0,
+          "cost_gap": 0.9917222451517028,
+          "critical_recall": 0.875,
+          "exact_sufficiency": 0.5,
+          "intervention_count": 0.0,
+          "records": 768,
+          "valid_minimum_set": 0.0
+        }
+      },
+      "redundant_or": {
+        "conditional_singleton_cost": {
+          "active_token_savings": 0.9457188909493938,
+          "budget_exhaustion_rate": 0.0,
+          "cost_gap": 0.0,
+          "critical_recall": 0.375,
+          "exact_sufficiency": 1.0,
+          "intervention_count": 30.0,
+          "records": 768,
+          "valid_minimum_set": 1.0
+        },
+        "exact_oracle": {
+          "active_token_savings": 0.9457188909493938,
+          "budget_exhaustion_rate": 0.0,
+          "cost_gap": 0.0,
+          "critical_recall": 0.375,
+          "exact_sufficiency": 1.0,
+          "intervention_count": 0.0,
+          "records": 768,
+          "valid_minimum_set": 1.0
+        },
+        "full_memory": {
+          "active_token_savings": 0.0,
+          "budget_exhaustion_rate": 0.0,
+          "cost_gap": 35.249422846395504,
+          "critical_recall": 1.0,
+          "exact_sufficiency": 1.0,
+          "intervention_count": 0.0,
+          "records": 768,
+          "valid_minimum_set": 0.0
+        },
+        "independent_leave_one_out": {
+          "active_token_savings": 1.0,
+          "budget_exhaustion_rate": 0.0,
+          "cost_gap": null,
+          "critical_recall": 0.0,
+          "exact_sufficiency": 0.0,
+          "intervention_count": 30.0,
+          "records": 768,
+          "valid_minimum_set": 0.0
+        },
+        "jointcore_cost_ordered": {
+          "active_token_savings": 0.9457188909493938,
+          "budget_exhaustion_rate": 0.0,
+          "cost_gap": 0.0,
+          "critical_recall": 0.375,
+          "exact_sufficiency": 1.0,
+          "intervention_count": 10.0,
+          "records": 768,
+          "valid_minimum_set": 1.0
+        },
+        "jointcore_legacy": {
+          "active_token_savings": 0.9457188909493938,
+          "budget_exhaustion_rate": 0.0,
+          "cost_gap": 0.0,
+          "critical_recall": 0.375,
+          "exact_sufficiency": 1.0,
+          "intervention_count": 10.0,
+          "records": 768,
+          "valid_minimum_set": 1.0
+        },
+        "random_b": {
+          "active_token_savings": 0.76624305949447,
+          "budget_exhaustion_rate": 0.0,
+          "cost_gap": 3.6853701552888545,
+          "critical_recall": 0.22591145833333334,
+          "exact_sufficiency": 0.48046875,
+          "intervention_count": 0.0,
+          "records": 768,
+          "valid_minimum_set": 0.0
+        },
+        "semantic_top_b": {
+          "active_token_savings": 0.7803422334354232,
+          "budget_exhaustion_rate": 0.0,
+          "cost_gap": 3.2373377562830687,
+          "critical_recall": 1.0,
+          "exact_sufficiency": 1.0,
+          "intervention_count": 0.0,
+          "records": 768,
+          "valid_minimum_set": 0.0
+        }
+      },
+      "single_variable": {
+        "conditional_singleton_cost": {
+          "active_token_savings": 0.9451948302777474,
+          "budget_exhaustion_rate": 0.0,
+          "cost_gap": 0.0,
+          "critical_recall": 1.0,
+          "exact_sufficiency": 1.0,
+          "intervention_count": 30.0,
+          "records": 768,
+          "valid_minimum_set": 1.0
+        },
+        "exact_oracle": {
+          "active_token_savings": 0.9451948302777474,
+          "budget_exhaustion_rate": 0.0,
+          "cost_gap": 0.0,
+          "critical_recall": 1.0,
+          "exact_sufficiency": 1.0,
+          "intervention_count": 0.0,
+          "records": 768,
+          "valid_minimum_set": 1.0
+        },
+        "full_memory": {
+          "active_token_savings": 0.0,
+          "budget_exhaustion_rate": 0.0,
+          "cost_gap": 36.144765314980155,
+          "critical_recall": 1.0,
+          "exact_sufficiency": 1.0,
+          "intervention_count": 0.0,
+          "records": 768,
+          "valid_minimum_set": 0.0
+        },
+        "independent_leave_one_out": {
+          "active_token_savings": 0.9451948302777474,
+          "budget_exhaustion_rate": 0.0,
+          "cost_gap": 0.0,
+          "critical_recall": 1.0,
+          "exact_sufficiency": 1.0,
+          "intervention_count": 30.0,
+          "records": 768,
+          "valid_minimum_set": 1.0
+        },
+        "jointcore_cost_ordered": {
+          "active_token_savings": 0.9451948302777474,
+          "budget_exhaustion_rate": 0.0,
+          "cost_gap": 0.0,
+          "critical_recall": 1.0,
+          "exact_sufficiency": 1.0,
+          "intervention_count": 10.0,
+          "records": 768,
+          "valid_minimum_set": 1.0
+        },
+        "jointcore_legacy": {
+          "active_token_savings": 0.9451948302777474,
+          "budget_exhaustion_rate": 0.0,
+          "cost_gap": 0.0,
+          "critical_recall": 1.0,
+          "exact_sufficiency": 1.0,
+          "intervention_count": 10.0,
+          "records": 768,
+          "valid_minimum_set": 1.0
+        },
+        "random_b": {
+          "active_token_savings": 0.76256563596476,
+          "budget_exhaustion_rate": 0.0,
+          "cost_gap": 3.8463011063011066,
+          "critical_recall": 0.21484375,
+          "exact_sufficiency": 0.21484375,
+          "intervention_count": 0.0,
+          "records": 768,
+          "valid_minimum_set": 0.0
+        },
+        "semantic_top_b": {
+          "active_token_savings": 0.7718698501392195,
+          "budget_exhaustion_rate": 0.0,
+          "cost_gap": 3.6780805638227516,
+          "critical_recall": 1.0,
+          "exact_sufficiency": 1.0,
+          "intervention_count": 0.0,
+          "records": 768,
+          "valid_minimum_set": 0.0
+        }
+      },
+      "synergy_and": {
+        "conditional_singleton_cost": {
+          "active_token_savings": 0.8326896071170795,
+          "budget_exhaustion_rate": 0.0,
+          "cost_gap": 0.0,
+          "critical_recall": 1.0,
+          "exact_sufficiency": 1.0,
+          "intervention_count": 30.0,
+          "records": 768,
+          "valid_minimum_set": 1.0
+        },
+        "exact_oracle": {
+          "active_token_savings": 0.8326896071170795,
+          "budget_exhaustion_rate": 0.0,
+          "cost_gap": 0.0,
+          "critical_recall": 1.0,
+          "exact_sufficiency": 1.0,
+          "intervention_count": 0.0,
+          "records": 768,
+          "valid_minimum_set": 1.0
+        },
+        "full_memory": {
+          "active_token_savings": 0.0,
+          "budget_exhaustion_rate": 0.0,
+          "cost_gap": 11.726576740960281,
+          "critical_recall": 1.0,
+          "exact_sufficiency": 1.0,
+          "intervention_count": 0.0,
+          "records": 768,
+          "valid_minimum_set": 0.0
+        },
+        "independent_leave_one_out": {
+          "active_token_savings": 0.8326896071170795,
+          "budget_exhaustion_rate": 0.0,
+          "cost_gap": 0.0,
+          "critical_recall": 1.0,
+          "exact_sufficiency": 1.0,
+          "intervention_count": 30.0,
+          "records": 768,
+          "valid_minimum_set": 1.0
+        },
+        "jointcore_cost_ordered": {
+          "active_token_savings": 0.8326896071170795,
+          "budget_exhaustion_rate": 0.0,
+          "cost_gap": 0.0,
+          "critical_recall": 1.0,
+          "exact_sufficiency": 1.0,
+          "intervention_count": 11.638020833333334,
+          "records": 768,
+          "valid_minimum_set": 1.0
+        },
+        "jointcore_legacy": {
+          "active_token_savings": 0.8326896071170795,
+          "budget_exhaustion_rate": 0.0,
+          "cost_gap": 0.0,
+          "critical_recall": 1.0,
+          "exact_sufficiency": 1.0,
+          "intervention_count": 11.0,
+          "records": 768,
+          "valid_minimum_set": 1.0
+        },
+        "random_b": {
+          "active_token_savings": 0.7661638345865436,
+          "budget_exhaustion_rate": 0.0,
+          "cost_gap": 1.0974775910364145,
+          "critical_recall": 0.24348958333333334,
+          "exact_sufficiency": 0.032552083333333336,
+          "intervention_count": 0.0,
+          "records": 768,
+          "valid_minimum_set": 0.0026041666666666665
+        },
+        "semantic_top_b": {
+          "active_token_savings": 0.7715239862755546,
+          "budget_exhaustion_rate": 0.0,
+          "cost_gap": 0.6033212930817481,
+          "critical_recall": 1.0,
+          "exact_sufficiency": 1.0,
+          "intervention_count": 0.0,
+          "records": 768,
+          "valid_minimum_set": 0.5
+        }
+      },
+      "synergy_xor": {
+        "conditional_singleton_cost": {
+          "active_token_savings": 0.8327677174309117,
+          "budget_exhaustion_rate": 0.0,
+          "cost_gap": 0.0,
+          "critical_recall": 1.0,
+          "exact_sufficiency": 1.0,
+          "intervention_count": 30.0,
+          "records": 768,
+          "valid_minimum_set": 1.0
+        },
+        "exact_oracle": {
+          "active_token_savings": 0.8327677174309117,
+          "budget_exhaustion_rate": 0.0,
+          "cost_gap": 0.0,
+          "critical_recall": 1.0,
+          "exact_sufficiency": 1.0,
+          "intervention_count": 0.0,
+          "records": 768,
+          "valid_minimum_set": 1.0
+        },
+        "full_memory": {
+          "active_token_savings": 0.0,
+          "budget_exhaustion_rate": 0.0,
+          "cost_gap": 11.773734205640979,
+          "critical_recall": 1.0,
+          "exact_sufficiency": 1.0,
+          "intervention_count": 0.0,
+          "records": 768,
+          "valid_minimum_set": 0.0
+        },
+        "independent_leave_one_out": {
+          "active_token_savings": 0.8327677174309117,
+          "budget_exhaustion_rate": 0.0,
+          "cost_gap": 0.0,
+          "critical_recall": 1.0,
+          "exact_sufficiency": 1.0,
+          "intervention_count": 30.0,
+          "records": 768,
+          "valid_minimum_set": 1.0
+        },
+        "jointcore_cost_ordered": {
+          "active_token_savings": 0.8327677174309117,
+          "budget_exhaustion_rate": 0.0,
+          "cost_gap": 0.0,
+          "critical_recall": 1.0,
+          "exact_sufficiency": 1.0,
+          "intervention_count": 11.5859375,
+          "records": 768,
+          "valid_minimum_set": 1.0
+        },
+        "jointcore_legacy": {
+          "active_token_savings": 0.8327677174309117,
+          "budget_exhaustion_rate": 0.0,
+          "cost_gap": 0.0,
+          "critical_recall": 1.0,
+          "exact_sufficiency": 1.0,
+          "intervention_count": 11.0,
+          "records": 768,
+          "valid_minimum_set": 1.0
+        },
+        "random_b": {
+          "active_token_savings": 0.7661473303805765,
+          "budget_exhaustion_rate": 0.0,
+          "cost_gap": 1.178272753816232,
+          "critical_recall": 0.23990885416666666,
+          "exact_sufficiency": 0.029947916666666668,
+          "intervention_count": 0.0,
+          "records": 768,
+          "valid_minimum_set": 0.0026041666666666665
+        },
+        "semantic_top_b": {
+          "active_token_savings": 0.7740777354169134,
+          "budget_exhaustion_rate": 0.0,
+          "cost_gap": 0.5771405550127976,
+          "critical_recall": 1.0,
+          "exact_sufficiency": 1.0,
+          "intervention_count": 0.0,
+          "records": 768,
+          "valid_minimum_set": 0.5
+        }
+      },
+      "threshold": {
+        "conditional_singleton_cost": {
+          "active_token_savings": 0.9345346142392391,
+          "budget_exhaustion_rate": 0.0,
+          "cost_gap": 0.0,
+          "critical_recall": 0.9203559027777778,
+          "exact_sufficiency": 1.0,
+          "intervention_count": 30.0,
+          "records": 768,
+          "valid_minimum_set": 1.0
+        },
+        "exact_oracle": {
+          "active_token_savings": 0.9345346142392391,
+          "budget_exhaustion_rate": 0.0,
+          "cost_gap": 0.0,
+          "critical_recall": 0.9203559027777778,
+          "exact_sufficiency": 1.0,
+          "intervention_count": 0.0,
+          "records": 768,
+          "valid_minimum_set": 1.0
+        },
+        "full_memory": {
+          "active_token_savings": 0.0,
+          "budget_exhaustion_rate": 0.0,
+          "cost_gap": 32.15914967736257,
+          "critical_recall": 1.0,
+          "exact_sufficiency": 1.0,
+          "intervention_count": 0.0,
+          "records": 768,
+          "valid_minimum_set": 0.0
+        },
+        "independent_leave_one_out": {
+          "active_token_savings": 1.0,
+          "budget_exhaustion_rate": 0.0,
+          "cost_gap": null,
+          "critical_recall": 0.0,
+          "exact_sufficiency": 0.0,
+          "intervention_count": 30.0,
+          "records": 768,
+          "valid_minimum_set": 0.0
+        },
+        "jointcore_cost_ordered": {
+          "active_token_savings": 0.9345346142392391,
+          "budget_exhaustion_rate": 0.0,
+          "cost_gap": 0.0,
+          "critical_recall": 0.9203559027777778,
+          "exact_sufficiency": 1.0,
+          "intervention_count": 10.0,
+          "records": 768,
+          "valid_minimum_set": 1.0
+        },
+        "jointcore_legacy": {
+          "active_token_savings": 0.9179897931205779,
+          "budget_exhaustion_rate": 0.0,
+          "cost_gap": 0.2942050534823972,
+          "critical_recall": 0.5004340277777778,
+          "exact_sufficiency": 1.0,
+          "intervention_count": 10.0,
+          "records": 768,
+          "valid_minimum_set": 0.3958333333333333
+        },
+        "random_b": {
+          "active_token_savings": 0.7684794023467821,
+          "budget_exhaustion_rate": 0.0,
+          "cost_gap": 3.651891015517625,
+          "critical_recall": 0.21701388888888887,
+          "exact_sufficiency": 0.3033854166666667,
+          "intervention_count": 0.0,
+          "records": 768,
+          "valid_minimum_set": 0.0
+        },
+        "semantic_top_b": {
+          "active_token_savings": 0.7742731694732027,
+          "budget_exhaustion_rate": 0.0,
+          "cost_gap": 3.105446302467787,
+          "critical_recall": 1.0,
+          "exact_sufficiency": 1.0,
+          "intervention_count": 0.0,
+          "records": 768,
+          "valid_minimum_set": 0.0
+        }
+      }
+    },
+    "overall": {
+      "conditional_singleton_cost": {
+        "active_token_savings": 0.877593391200641,
+        "budget_exhaustion_rate": 0.0,
+        "cost_gap": 0.0,
+        "critical_recall": 0.8661506558641975,
+        "exact_sufficiency": 1.0,
+        "intervention_count": 30.0,
+        "records": 6912,
+        "valid_minimum_set": 1.0
+      },
+      "exact_oracle": {
+        "active_token_savings": 0.877593391200641,
+        "budget_exhaustion_rate": 0.0,
+        "cost_gap": 0.0,
+        "critical_recall": 0.8661506558641975,
+        "exact_sufficiency": 1.0,
+        "intervention_count": 0.0,
+        "records": 6912,
+        "valid_minimum_set": 1.0
+      },
+      "full_memory": {
+        "active_token_savings": 0.0,
+        "budget_exhaustion_rate": 0.0,
+        "cost_gap": 20.909802249171882,
+        "critical_recall": 1.0,
+        "exact_sufficiency": 1.0,
+        "intervention_count": 0.0,
+        "records": 6912,
+        "valid_minimum_set": 0.0
+      },
+      "independent_leave_one_out": {
+        "active_token_savings": 0.9000420209050405,
+        "budget_exhaustion_rate": 0.0,
+        "cost_gap": 0.0,
+        "critical_recall": 0.6666666666666666,
+        "exact_sufficiency": 0.6666666666666666,
+        "intervention_count": 30.0,
+        "records": 6912,
+        "valid_minimum_set": 0.6666666666666666
+      },
+      "jointcore_cost_ordered": {
+        "active_token_savings": 0.877593391200641,
+        "budget_exhaustion_rate": 0.0,
+        "cost_gap": 0.0,
+        "critical_recall": 0.8661506558641975,
+        "exact_sufficiency": 1.0,
+        "intervention_count": 11.12673611111111,
+        "records": 6912,
+        "valid_minimum_set": 1.0
+      },
+      "jointcore_legacy": {
+        "active_token_savings": 0.8757550777430119,
+        "budget_exhaustion_rate": 0.0,
+        "cost_gap": 0.03268945038693302,
+        "critical_recall": 0.8194926697530863,
+        "exact_sufficiency": 1.0,
+        "intervention_count": 10.956597222222221,
+        "records": 6912,
+        "valid_minimum_set": 0.9328703703703703
+      },
+      "random_b": {
+        "active_token_savings": 0.7660276447337552,
+        "budget_exhaustion_rate": 0.0,
+        "cost_gap": 3.3125882579660333,
+        "critical_recall": 0.23295235339506173,
+        "exact_sufficiency": 0.16174768518518517,
+        "intervention_count": 0.0,
+        "records": 6912,
+        "valid_minimum_set": 0.0011574074074074073
+      },
+      "semantic_top_b": {
+        "active_token_savings": 0.7747785454713859,
+        "budget_exhaustion_rate": 0.0,
+        "cost_gap": 1.7753650832019128,
+        "critical_recall": 0.9861111111111112,
+        "exact_sufficiency": 0.9444444444444444,
+        "intervention_count": 0.0,
+        "records": 6912,
+        "valid_minimum_set": 0.2222222222222222
+      }
+    }
+  },
+  "record_sha256": "f61ee49ae6c3e4cb9b18de5bf05538be442336c8e6ba82bedd618e7eff2736e5",
+  "schema_version": 1,
+  "source_sha256": "f29242330093a17bf4d019ffbae949323e0c41b775b51fb1df9bcc0a9c892020",
+  "stage": "paper_expansion_exact_v1",
+  "status": "complete",
+  "task_count": 6912
+}

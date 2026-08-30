@@ -1,0 +1,55 @@
+{
+  "schema_version": 1,
+  "idea_id": "jointcore",
+  "status": "frozen_reported_aggregates",
+  "exact_stage": {
+    "conditions": 6912,
+    "metrics": ["exact_sufficiency", "minimum_cost_recovery", "active_payload_savings", "subset_evaluations"],
+    "methods": {
+      "full_memory": [1.0, 0.0, 0.0, 0.0],
+      "random_b": [0.1617, 0.0012, 0.7660, 0.0],
+      "semantic_top_b": [0.9444, 0.2222, 0.7748, 0.0],
+      "independent_leave_one_out": [0.6667, 0.6667, 0.9000, 30.0],
+      "conditional_singleton_cost": [1.0, 1.0, 0.8776, 30.0],
+      "jointcore_legacy": [1.0, 0.9329, 0.8758, 10.96],
+      "jointcore_cost_ordered": [1.0, 1.0, 0.8776, 11.13],
+      "exact_oracle": [1.0, 1.0, 0.8776, 0.0]
+    }
+  },
+  "model_stage": {
+    "tasks_per_model": 432,
+    "cell_order": ["control_accuracy", "behavior_jointcore", "behavior_singleton", "exact_jointcore", "exact_singleton", "minimum_jointcore", "minimum_singleton", "savings_jointcore", "savings_singleton", "queries_jointcore", "queries_singleton"],
+    "models": {
+      "qwen25_14b": [0.988, 1.0, 1.0, 0.586, 0.544, 0.465, 0.382, 0.881, 0.860, 9.97, 16.0],
+      "gemma4_12b_it": [0.875, 1.0, 1.0, 0.845, 0.808, 0.572, 0.493, 0.837, 0.807, 10.70, 16.0],
+      "mistral31_24b_4bit": [0.847, 1.0, 1.0, 0.660, 0.644, 0.403, 0.296, 0.874, 0.835, 9.56, 16.0],
+      "llama33_70b_4bit_exploratory": [0.993, 1.0, 1.0, 0.706, 0.713, 0.583, 0.551, 0.856, 0.836, 10.87, 16.0]
+    }
+  },
+  "paired_query_tests": {
+    "difference": "jointcore_minus_singleton",
+    "models": {
+      "qwen25_14b": {"mean": -6.03, "ci95": [-6.34, -5.73], "holm_adjusted_p": "<0.001"},
+      "gemma4_12b_it": {"mean": -5.30, "ci95": [-5.81, -4.77], "holm_adjusted_p": "<0.001"},
+      "mistral31_24b_4bit": {"mean": -6.44, "ci95": [-6.84, -6.00], "holm_adjusted_p": "<0.001"},
+      "llama33_70b_4bit_exploratory": {"mean": -5.13, "ci95": [-5.49, -4.74], "holm_adjusted_p": "<0.001"}
+    }
+  },
+  "robustness": {
+    "tasks_per_model": 108,
+    "cell_order": ["primary", "deletion", "unknown_mask", "pending_sentinel", "counterfactual", "direct_labels", "ab_labels"],
+    "cell_format": "jointcore/singleton task success",
+    "models": {
+      "qwen25_14b": ["0.574/0.537", "0.611/0.583", "0.574/0.537", "0.593/0.602", "0.694/0.657", "0.750/0.731", "0.667/0.667"],
+      "gemma4_12b_it": ["0.991/0.935", "0.907/0.870", "0.991/0.935", "0.935/0.917", "0.824/0.861", "0.926/0.926", "0.685/0.676"],
+      "mistral31_24b_4bit": ["0.500/0.491", "0.537/0.509", "0.500/0.491", "0.491/0.481", "0.509/0.519", "0.593/0.565", "0.528/0.546"],
+      "llama33_70b_4bit_exploratory": ["0.722/0.694", "0.704/0.722", "0.722/0.694", "0.722/0.694", "0.796/0.796", "0.713/0.741", "0.815/0.815"]
+    }
+  },
+  "disclosures": {
+    "llama_exploratory": true,
+    "display_cutoff_preregistered": false,
+    "model_minimum_cost_tests_descriptive": true,
+    "raw_model_outputs_included": false
+  }
+}
