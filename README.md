@@ -1,7 +1,7 @@
 # JointCore
 
-This anonymous camera-ready package contains the code and frozen configurations
-for the JointCore exact, model, robustness, and transfer experiments. It does
+This repository contains the code for the JointCore exact, model, robustness,
+and transfer experiments. It does
 not contain model weights, paper sources, or experimental outputs.
 
 ## Setup and verification
@@ -34,7 +34,7 @@ export JOINTCORE_MISTRAL31_24B_PATH=/absolute/path/to/mistral-24b-4bit
 export JOINTCORE_LLAMA33_70B_PATH=/absolute/path/to/llama-3.3-70b
 ```
 
-Run one registered actor on an allocation exposing exactly one GPU:
+Run one registered model on an allocation exposing exactly one GPU:
 
 ```bash
 CUDA_VISIBLE_DEVICES=0 uv run python scripts/run_model_worker.py \
@@ -45,7 +45,7 @@ The `lane` value is a logical provenance label. The frozen assignment is
 recorded in `configs/experiments/confirmation.json`. Workers are resumable and
 can be split deterministically with `--num-shards N --shard-index I`.
 
-After every actor completes:
+After each model completes:
 
 ```bash
 uv run python scripts/aggregate_models.py
@@ -56,7 +56,7 @@ CUDA_VISIBLE_DEVICES=0 uv run python scripts/run_transfer_worker.py \
 uv run python scripts/aggregate_robustness.py
 ```
 
-For the reported Llama extension, pass
+For the reported Llama 70B experiments, pass
 `configs/experiments/llama_extension.json` and
 `configs/models/llama_extension.json` explicitly. Run shards 0 and 1 on the
 two registered lanes with a shared `--output-root`, then aggregate with the
