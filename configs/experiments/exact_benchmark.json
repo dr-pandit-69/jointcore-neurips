@@ -1,0 +1,18 @@
+{
+  "schema_version": 1,
+  "idea_id": "jointcore",
+  "stage": "paper_expansion_exact_v1",
+  "artifact_id": "exact_v1",
+  "source_spec": "docs/EXPERIMENT_PROTOCOL.md",
+  "source_sha256": "f29242330093a17bf4d019ffbae949323e0c41b775b51fb1df9bcc0a9c892020",
+  "candidate_counts": [8, 16, 32, 64],
+  "support_sizes": [2, 4],
+  "horizons": [1, 4, 8, 16],
+  "families": ["single_variable", "redundant_or", "synergy_and", "synergy_xor", "threshold", "multiple_minimal_sets", "proxy_confounded", "delayed_fsm", "harmful_stale"],
+  "domains": ["orders", "access_control", "deployment", "calendar", "database", "file_debug"],
+  "seed_blocks": [0, 1, 2, 3],
+  "seed_base": 26082701,
+  "methods": ["full_memory", "random_b", "semantic_top_b", "independent_leave_one_out", "conditional_singleton_cost", "jointcore_legacy", "jointcore_cost_ordered", "exact_oracle"],
+  "selection": {"budget_b": 4, "maximum_interventions": 256},
+  "costs": {"distractor_token_cost_min": 1, "distractor_token_cost_max": 12, "support_token_cost_min": 3, "support_token_cost_max": 9}
+}

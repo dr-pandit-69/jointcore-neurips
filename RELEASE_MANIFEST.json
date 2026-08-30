@@ -1,0 +1,140 @@
+{
+  "code_only": true,
+  "files": [
+    {
+      "bytes": 60,
+      "path": ".gitignore",
+      "sha256": "7e8e8273e5fc057e136bbdea9bceff6b6e79526eb49d64361e206ea976e63021"
+    },
+    {
+      "bytes": 1068,
+      "path": "LICENSE",
+      "sha256": "9f1abe28a25b5f6f95c58a81a647de3fa72ff6388d228c59bddd079255709989"
+    },
+    {
+      "bytes": 2661,
+      "path": "README.md",
+      "sha256": "89c9d6bb746fdcdeb0c9ce55fba9239414b10d46bcd84ca7cf921dd9a07658b6"
+    },
+    {
+      "bytes": 841,
+      "path": "THIRD_PARTY_MODELS.md",
+      "sha256": "5598de46df00c6b38b2f8e01d03dcd1aa6daecf3e50cdd5fa96be9415e305066"
+    },
+    {
+      "bytes": 2411,
+      "path": "configs/experiments/confirmation.json",
+      "sha256": "ec89992202e77bc3aee6de86b7240ad8b11d2f796d6fcc75f5ff33c1d7247975"
+    },
+    {
+      "bytes": 1051,
+      "path": "configs/experiments/exact_benchmark.json",
+      "sha256": "f903e7bcfacd8562bb127e98d618238abc2dfa9bc5038043be87d8644e32aa36"
+    },
+    {
+      "bytes": 2652,
+      "path": "configs/experiments/llama_extension.json",
+      "sha256": "c8df228b9249d40c0861ab44a249b45fcbed27a501907806caab9269c914a265"
+    },
+    {
+      "bytes": 1165,
+      "path": "configs/models/frozen_models.json",
+      "sha256": "8fea2e3435ffeb2b7ded30dcd033c50e3ea919b92ae1942402f3d57efcebff07"
+    },
+    {
+      "bytes": 839,
+      "path": "configs/models/llama_extension.json",
+      "sha256": "ef18cc514efa059db03519bfb46355d28a3479bcce878c4d5419f8895bd6662b"
+    },
+    {
+      "bytes": 1553,
+      "path": "docs/CONFIRMATION_FREEZE.md",
+      "sha256": "67f374bf7188b15b033e8d5182411ad3421aa34f1f8a2eded1831a309186cef6"
+    },
+    {
+      "bytes": 3867,
+      "path": "docs/EXPERIMENT_PROTOCOL.md",
+      "sha256": "f29242330093a17bf4d019ffbae949323e0c41b775b51fb1df9bcc0a9c892020"
+    },
+    {
+      "bytes": 717,
+      "path": "pyproject.toml",
+      "sha256": "aa13c4129fb35394162fb77d679bb2f822d0aad1ef19d7d3228018ef8066a269"
+    },
+    {
+      "bytes": 14900,
+      "path": "scripts/aggregate_models.py",
+      "sha256": "a6a3bfb0c8e1956d48669474ba756b526f077893e8845a5f575754243beb94dd"
+    },
+    {
+      "bytes": 9045,
+      "path": "scripts/aggregate_robustness.py",
+      "sha256": "bf83e7c13f6c3d1a825faddddcbbaf003d14b7ba593228662ff433d25e8f746a"
+    },
+    {
+      "bytes": 5505,
+      "path": "scripts/run_exact_benchmark.py",
+      "sha256": "fe46cca4fd56b64c93912ee8a497610bb07f82016765b0df2663aeaeeb0a68bf"
+    },
+    {
+      "bytes": 7634,
+      "path": "scripts/run_model_worker.py",
+      "sha256": "ff7248d41cdf925f25911db547c6745727c7dd925a77f48b887b3e0c6f14a544"
+    },
+    {
+      "bytes": 9691,
+      "path": "scripts/run_robustness_worker.py",
+      "sha256": "19a3888ff8bb7989cb5c5f7504dbe5d02a11a568042b70756f36aadaa74efbbd"
+    },
+    {
+      "bytes": 7872,
+      "path": "scripts/run_transfer_worker.py",
+      "sha256": "1b13ce9dc11952e136a6728b4f6c7558d9472205ff5f89e3e10db61945d7c089"
+    },
+    {
+      "bytes": 86,
+      "path": "src/jointcore/__init__.py",
+      "sha256": "10717ea3ac3438b0e388a37b82b286df9e5a3c457c43c575ff6c64caef8e179b"
+    },
+    {
+      "bytes": 13477,
+      "path": "src/jointcore/llm_runtime.py",
+      "sha256": "6a1efafa77c5c4411a80c3f692b47f6527649156b3370c984af9a6d9a97ee663"
+    },
+    {
+      "bytes": 28608,
+      "path": "src/jointcore/paper_expansion.py",
+      "sha256": "6f82aa2576e70b95c1aa8c9d80cb756ac427fc02624f968e879cd77f6c4de988"
+    },
+    {
+      "bytes": 21676,
+      "path": "src/jointcore/stateful.py",
+      "sha256": "2a480e3ad4e46a55cefcdc7f91e5b972c2ce180eb1bda1be6f3e28e5bad8d6be"
+    },
+    {
+      "bytes": 2487,
+      "path": "src/jointcore/utils.py",
+      "sha256": "00a8cc90864ed71dda8020a3708337fdb2dac261da8c21e5a2cba243b043afae"
+    },
+    {
+      "bytes": 4715,
+      "path": "tests/test_paper_expansion.py",
+      "sha256": "17dc631413a34ba7d4438e071850c29db234fdd8f522e6343caa54eda9450a65"
+    },
+    {
+      "bytes": 3894,
+      "path": "tests/test_stateful.py",
+      "sha256": "c3ed82d220f14925661866c5ec1ab6aac03689c36e4f2e88c7e34ff5d0f71a11"
+    },
+    {
+      "bytes": 66446,
+      "path": "uv.lock",
+      "sha256": "a80e9b72a0573d689780f387232e666a1ab8598e72713e82851c87456c2a2be7"
+    }
+  ],
+  "model_weights_included": false,
+  "project": "jointcore",
+  "release_kind": "anonymous_camera_ready_code",
+  "result_artifacts_included": false,
+  "schema_version": 1
+}

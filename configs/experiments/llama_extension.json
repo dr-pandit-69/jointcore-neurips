@@ -1,0 +1,39 @@
+{
+  "schema_version": 1,
+  "idea_id": "jointcore",
+  "stage": "paper_expansion_model_extension_v1",
+  "artifact_id": "model_extension_llama33_70b_v1",
+  "purpose": "Post-hoc Llama-3.3-70B extension using the unchanged frozen confirmation-v4 task grid, methods, interface, statistics, and gates.",
+  "source_spec": "docs/CONFIRMATION_FREEZE.md",
+  "source_sha256": "67f374bf7188b15b033e8d5182411ad3421aa34f1f8a2eded1831a309186cef6",
+  "parent_protocol": "docs/EXPERIMENT_PROTOCOL.md",
+  "parent_protocol_sha256": "f29242330093a17bf4d019ffbae949323e0c41b775b51fb1df9bcc0a9c892020",
+  "actors": ["llama33_70b_4bit"],
+  "actor_lanes": {"llama33_70b_4bit": ["a100-1", "a100-2"]},
+  "model_roles": ["paper_expansion_actor"],
+  "task_grid": {
+    "task_count": 432,
+    "candidate_count": 16,
+    "support_sizes": [2, 4],
+    "horizons": [1, 4, 8, 16],
+    "families": ["single_variable", "redundant_or", "synergy_and", "synergy_xor", "threshold", "multiple_minimal_sets", "proxy_confounded", "delayed_fsm", "harmful_stale"],
+    "domains": ["orders", "access_control", "deployment", "calendar", "database", "file_debug"],
+    "seed_blocks": [0, 1, 2, 3],
+    "seed_base": 26082901
+  },
+  "methods": ["full_memory", "random_b", "semantic_top_b", "independent_leave_one_out", "conditional_singleton_cost", "jointcore_legacy", "jointcore_cost_ordered", "exact_oracle"],
+  "selection": {"budget_b": 4, "maximum_interventions": 64, "cost_order": "descending", "semantic_order": "ascending_low_relevance_first"},
+  "interface": {"name": "boolean_condition_mean_log_probability", "decision_label_mode": "boolean", "maximum_input_tokens": 768, "decision_choices": ["YES", "NO"], "terminal_choices": ["COMMIT", "HALT"]},
+  "robustness": {"fixed_subset_count": 108, "interventions": ["deletion", "typed_mask", "plausible_same_type", "counterfactual"], "label_sensitivity": ["direct", "ab"], "cross_model_transfer": false},
+  "statistics": {"cluster_bootstrap_replicates": 2000, "seed": 26082999, "noninferiority_margin": 0.05, "holm_correction": true},
+  "gates": {"task_loss_max": 0.02, "noninferiority_margin": 0.05, "intervention_reduction_target": 0.15, "active_token_savings_min": 0.50},
+  "costs": {"distractor_token_cost_min": 1, "distractor_token_cost_max": 12, "support_token_cost_min": 3, "support_token_cost_max": 9},
+  "freeze": {
+    "derived_from": "paper_expansion_confirmation_v4",
+    "ordering": "low-relevance block first; top-B block sorted by descending token cost",
+    "interface": "YES/NO condition truth mapped to balanced workflow actions",
+    "frozen": true,
+    "further_tweaks_permitted": false,
+    "posthoc_model_extension": true
+  }
+}
