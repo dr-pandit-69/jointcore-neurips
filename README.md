@@ -1,4 +1,4 @@
-# JointCore
+# JointCore [ Accepted @ Personalized, aligned, long-term memory for AI systems Workshop, NeurIPS 2026, Paris ]
 
 This repository contains the code for the JointCore exact, model, robustness,
 and transfer experiments. It also contains frozen manuscript aggregates under
